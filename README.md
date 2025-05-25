@@ -1,5 +1,6 @@
 # Project Responsive Web Design using Bootstrap
-## Date:20/05/2025
+## 212224040196
+## DATE : 25-05-2025
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -26,168 +27,76 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 ## PROGRAM :
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dribbble Clone Landing Page</title>
+    <title>Music World</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .hero-section {
-            background: #f8f9fa;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .shots-section img {
-            border-radius: 1rem;
-        }
-        .shots-section .card {
-            border: none;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold text-pink" href="#" style="color:#ea4c89;">dribbble</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#">Music World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inspiration</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Find Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Learn Design</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Go Pro</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-                    <li class="nav-item"><a class="btn btn-pink ms-2" style="background:#ea4c89;color:white;" href="#">Sign In</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Playlist">Playlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <header class="bg-dark text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4 fw-bold" style="color:#ea4c89;">Discover the world’s top designers & creatives</h1>
-            <p class="lead mt-3 mb-4">Dribbble is the leading destination to find & showcase creative work and home to the world's best design professionals.</p>
-            <a href="#" class="btn btn-lg" style="background:#ea4c89;color:white;">Get Started</a>
+            <h1 class="display-4">Welcome to Music World</h1>
+            <p class="lead">A responsive home for music lovers,designed for all devices..</p>
+            <a href="#features" class="btn btn-primary mt-3">Explore Now</a>
         </div>
-    </section>
-
-    <!-- Shots Section with Tabs -->
-    <section class="shots-section py-5">
+    </header>
+    <!-- Features Section -->
+    <section id="features" class="py-5">
         <div class="container">
-            <h2 class="mb-4 text-center">Popular Shots</h2>
-            <ul class="nav nav-pills justify-content-center mb-4" id="shotsTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="product-tab" data-bs-toggle="pill" data-bs-target="#product" type="button" role="tab" aria-controls="product" aria-selected="true">Product</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="webdesign-tab" data-bs-toggle="pill" data-bs-target="#webdesign" type="button" role="tab" aria-controls="webdesign" aria-selected="false">Web Design</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="branding-tab" data-bs-toggle="pill" data-bs-target="#branding" type="button" role="tab" aria-controls="branding" aria-selected="false">Branding</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="shotsTabContent">
-                <!-- Product Tab -->
-                <div class="tab-pane fade show active" id="product" role="tabpanel" aria-labelledby="product-tab">
-                    <div class="row g-4">
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="pro1.webp" class="card-img-top" alt="Shot 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Creative App UI</h5>
-                                    <p class="card-text">by Designer A</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="pro2.webp" class="card-img-top" alt="Shot 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Modern Dashboard</h5>
-                                    <p class="card-text">by Designer B</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="pro3.webp" class="card-img-top" alt="Shot 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Landing Page Design</h5>
-                                    <p class="card-text">by Designer C</p>
-                                </div>
-                            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="image.png" class="card-img-top" alt="Latest News">
+                        <div class="card-body">
+                            <h5 class="card-title">Latest News</h5>
+                            <p class="card-text">Stay tuned to the beats that matter,anytime,anywhere.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Web Design Tab -->
-                <div class="tab-pane fade" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab">
-                    <div class="row g-4">
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="web1.webp" class="card-img-top" alt="Web Design 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Portfolio Website</h5>
-                                    <p class="card-text">by Designer D</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="web2.webp" class="card-img-top" alt="Web Design 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">E-commerce UI</h5>
-                                    <p class="card-text">by Designer E</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="web3.webp" class="card-img-top" alt="Web Design 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Blog Layout</h5>
-                                    <p class="card-text">by Designer F</p>
-                                </div>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="image copy.png" class="card-img-top" alt="Top Reviews">
+                        <div class="card-body">
+                            <h5 class="card-title">Top Reviews</h5>
+                            <p class="card-text">Honest reviews,flawless design-music feedback on every screen</p>
                         </div>
                     </div>
                 </div>
-                <!-- Branding Tab -->
-                <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
-                    <div class="row g-4">
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="brand1.webp" class="card-img-top" alt="Branding 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Logo Design</h5>
-                                    <p class="card-text">by Designer G</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="brand2.webp" class="card-img-top" alt="Branding 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Brand Identity</h5>
-                                    <p class="card-text">by Designer H</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
-                                <img src="brand3.webp" class="card-img-top" alt="Branding 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Packaging Design</h5>
-                                    <p class="card-text">by Designer I</p>
-                                </div>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="Screenshot 2025-05-19 055628.png" class="card-img-top" alt="Community">
+                        <div class="card-body">
+                            <h5 class="card-title">Community</h5>
+                            <p class="card-text">Join the rhythm of a global music community,anytime,anywhere</p>
                         </div>
                     </div>
                 </div>
@@ -195,32 +104,84 @@ Publish the website in the LocalHost.
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="py-5 bg-light text-center">
+    <!-- Games Section -->
+    <section id="games" class="bg-light py-5">
         <div class="container">
-            <h2 class="mb-3">Ready to showcase your work?</h2>
-            <a href="#" class="btn btn-lg" style="background:#ea4c89;color:white;">Join Dribbble</a>
+            <h2 class="text-center mb-4">Top Albums</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot 2025-05-19 055846.png" class="card-img-top" alt="Game 1">
+                        <div class="card-body">
+                            <h5 class="card-title">English</h5>
+                            <p class="card-text">Explore the soundtracks  of the year,optimized for every device.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot 2025-05-19 060016.png" class="card-img-top" alt="Game 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Artists Spotlights</h5>
+                            <p class="card-text">Celebrate the creators,beautifully highlighted for every music lovers.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot 2025-05-19 060030.png" class="card-img-top" alt="Game 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming Events</h5>
+                            <p class="card-text">Stay in tune with upcoming events,anytime,anywhere</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-center py-3 border-top">
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            &copy; 2025 Designed by <strong>Chiiradeep R</strong>
+            <p class="mb-0">&copy; 2024 Music World. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
 
 ## OUTPUT:
-![444902890-00b33300-3a46-4ca5-a150-9275172d2694](https://github.com/user-attachments/assets/740f98ca-c7fd-433a-929e-4dda6846b547)
+![image](https://github.com/user-attachments/assets/974c8abe-1b9e-4f32-a010-96d6eac138d9)
+![image](https://github.com/user-attachments/assets/1b11d4c0-20fd-414f-8033-dbad08cc052b)
 
-![444902907-76caeba7-288d-4cda-8892-dcbbee786907](https://github.com/user-attachments/assets/33eae4e3-dcda-4a58-8fb6-10fb5ff694f4)
+
 
 
 ## RESULT:
